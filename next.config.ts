@@ -1,8 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export',
-  trailingSlash: true,
+  // Vercel автоматически определяет настройки
+  // Убираем 'export', чтобы использовать SSR возможности Vercel
+  trailingSlash: false,
 };
 
 export default nextConfig;
